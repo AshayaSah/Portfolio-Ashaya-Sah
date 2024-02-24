@@ -103,6 +103,16 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  /* Transparent Glass Effect */
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 20px;
+}
+
+.menu-links a:hover {
+    color: gray;
 }
 
 .menu-links a {
@@ -112,7 +122,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  /* transition: all 0.3 ease-in-out; */
 }
 
 .menu-links li {
@@ -121,10 +131,12 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
+  transition-duration: 0.3s;
 }
 
 .hamburger-icon.open span:nth-child(2) {
@@ -133,18 +145,21 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+  transition-duration: 0.3s;
 }
 
 .hamburger-icon span:first-child {
   transform: none;
+  transition-duration: 0.3s; /* Transition to Hamburger Icon */
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:nth-child(2) {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:last-child{
   transform: none;
+  transition-duration: 0.3s; /* Transition to Hamburger Icon */
 }
 
 /* SECTIONS */

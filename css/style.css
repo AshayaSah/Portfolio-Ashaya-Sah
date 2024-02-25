@@ -22,6 +22,14 @@ p {
 
 /* Transition */
 
+.logo a:hover {
+  cursor:default;
+  color: black;
+  text-decoration: none;
+  text-decoration-color: WHITE;
+  
+}
+
  a, .btn {
     transition: all 300ms ease;
  }
@@ -332,6 +340,9 @@ section {
   p {
     color:rgb(215, 215, 215);;
   }
+  h2 {
+    color:white;
+  }
 }
 
 .section-container {
@@ -389,7 +400,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
+/* #projects {
   position: relative;
 }
 
@@ -412,7 +423,7 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-}
+} */
 
 /* CONTACT */
 
@@ -426,8 +437,8 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  /* border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid; */
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
@@ -438,21 +449,39 @@ article .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin: 1rem;
+  padding: 5px;
+  border-radius: 30px;
 }
 
 .contact-info-container p {
   font-size: larger;
 }
 
+.contact-info-container p a {
+  color: gray;
+}
+
+.contact-info-container:hover {
+  /* background: rgb(53, 53, 53);
+  color: white; */
+  transform: scale(1.2);
+  transition: 0.5s;
+  p a{
+    color:Black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
 .contact-icon {
   cursor: default;
 }
 
-.email-icon {
+/* .email-icon {
   height: 2.5rem;
-}
+} */
 
 /* FOOTER SECTION */
 

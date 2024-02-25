@@ -27,6 +27,13 @@
   .section-container {
     display: block;
   }
+  /* No gap between profile and about */
+  /* #profile {
+    margin-bottom: 0;
+  }
+  #about {
+    padding:0;
+  } */
   .arrow {
     display: none;
   }
@@ -48,6 +55,13 @@
   }
 }
 
+/* For Contact to MactchUp with the experience Boxes */
+/* @media screen and (max-width: 942px) {
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+  }
+} */
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -56,6 +70,9 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+  #about{
+    padding-top: 0;
   }
   article {
     font-size: 1rem;
@@ -71,6 +88,8 @@
   }
   .contact-info-container {
     margin: 0;
+    width:120px;
+    justify-content: initial;
   }
   .contact-info-container p,
   .nav-links li a {

@@ -343,6 +343,7 @@ section {
   h2 {
     color:white;
   }
+  transition: 0.5s;
 }
 
 .section-container {

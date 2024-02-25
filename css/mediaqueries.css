@@ -10,6 +10,9 @@
   #projects {
     height: fit-content;
   }
+  .section__pic-container:hover {
+    transform: scale(1.4);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -49,6 +52,14 @@
     height: 275px;
     justify-content: center;
     margin: 0 auto 2rem;
+  }
+
+  /* For Hover inlargement of Pics */
+  .section__pic-container:hover {
+    transform: scale(1.2);
+  }
+  #about .section__pic-container:hover {
+    transform: scale(1.1);
   }
   .about-containers {
     margin-top: 0;
@@ -119,5 +130,12 @@
   }
   .text-container {
     text-align: justify;
+  }
+  /* For Hover inlargement of Pics */
+  .section__pic-container:hover {
+    transform: none;
+  }
+  #about .section__pic-container:hover {
+    transform: none;
   }
 }

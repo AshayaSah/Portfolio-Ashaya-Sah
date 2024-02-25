@@ -197,6 +197,7 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
+  transition: 0.3s;
   margin: auto 0;
 }
 
@@ -454,6 +455,7 @@ article .icon {
   margin: 1rem;
   padding: 5px;
   border-radius: 30px;
+  transition: 0.5s;
 }
 
 .contact-info-container p {
@@ -468,7 +470,6 @@ article .icon {
   /* background: rgb(53, 53, 53);
   color: white; */
   transform: scale(1.2);
-  transition: 0.5s;
   p a{
     color:Black;
     text-decoration: none;

@@ -507,7 +507,33 @@ footer p {
   transition: all 0.75s;
 }
 
+.hidden:nth-child(4) {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(100%);
+  transition: all 0.75s;
+}
+
+.hidden:nth-child(6) {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(100%);
+  transition: all 0.75s;
+}
+
 .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.show:nth-child(4){
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.show:nth-child(6){
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
@@ -518,9 +544,6 @@ footer p {
   filter: none;
 }
 
-#hamburger-nav.show {
-  filter:none;
-}
 /* For the transition delay between the divs inside a section. For this, a class shall be defined to every div and use the transition delay. */
  /* USE SOMETHING TIKE ANIMATION OF LOGO AS A CLASS */
 /* .hidden:first-child {

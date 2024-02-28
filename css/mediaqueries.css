@@ -151,8 +151,8 @@
 }
 
 /* Scroll Animation on Page scrolling only once*/
-/* @media (preferes-reduced-motion) {
+@media (prefers-reduced-motion) {
   .hidden {
     transition: none;
   }
-} */
+}

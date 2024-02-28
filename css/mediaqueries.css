@@ -64,6 +64,9 @@
   .about-containers {
     margin-top: 0;
   }
+  .btns {
+    display: none;
+  }
 }
 
 /* For Contact to MactchUp with the experience Boxes */
@@ -137,5 +140,12 @@
   }
   #about .section__pic-container:hover {
     transform: none;
+  }
+}
+
+/* Scroll Animation on Page scrolling only once*/
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }

@@ -112,12 +112,12 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: 0.3s ease-in-out;
   /* Transparent Glass Effect */
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4.5px );
-  -webkit-backdrop-filter: blur( 4.5px );
+  backdrop-filter: blur( 2.5px ) !important;
+  -webkit-backdrop-filter: blur( 2.5px ) !important;
   border-radius: 20px;
 }
 
@@ -141,7 +141,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 .hamburger-icon.open span:first-child {
@@ -328,7 +328,7 @@ section {
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 1px );
-  -webkit-backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px ); 
   border-radius: 20px;
   /* background: white;
   border-radius: 2rem;
@@ -504,7 +504,7 @@ footer p {
   opacity: 0;
   filter: blur(3px);
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 0.75s;
 }
 
 .show {
@@ -513,8 +513,28 @@ footer p {
   transform: translateX(0);
 }
 
+/* Removing the overwriting filter property */
+#hamburger-nav {
+  filter: none;
+}
+
+#hamburger-nav.show {
+  filter:none;
+}
 /* For the transition delay between the divs inside a section. For this, a class shall be defined to every div and use the transition delay. */
  /* USE SOMETHING TIKE ANIMATION OF LOGO AS A CLASS */
-.hidden:first-child {
+/* .hidden:first-child {
   transition-delay: 100ms; 
+} */
+
+
+/* For menu-links appear in front of Profile by defining the z axis*/
+#hamburger-nav {
+  position: relative;
+  z-index: 2; /* Set a higher z-index for the hamburger menu */
+}
+
+#profile {
+  position: relative;
+  z-index: 1; /* Set a lower z-index for the profile section */
 }

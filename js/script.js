@@ -95,3 +95,6 @@ document.body.addEventListener("mousedown", closeMenuOutsideClick);
 
  const hiddenElements = document.querySelectorAll('.hidden');
  hiddenElements.forEach((el) => observer.observe(el));
+
+ //For Varcel Insight
+ window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };

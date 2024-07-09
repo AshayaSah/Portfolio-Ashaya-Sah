@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/profilePictureCircle.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
     <title>Ashaya Sah - Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="desktop-nav" class="hidden">
-        <div class="logo"><a href="#index">Ashaya Sah</a></div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo"><a href="#index">Ashaya Sah</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+
     <nav id="hamburger-nav" class="hidden">
-        <div class="logo">Ashaya Sah</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Ashaya Sah</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
+
     <section id="profile" class="hidden">
-        <div class="section__pic-container btn">
-          <img src="./assets/profilePictureCircle.png" alt="Ashaya Sah profile picture" />
+      <div class="section__pic-container btn">
+        <img
+          src="./assets/profilePictureCircle.png"
+          alt="Ashaya Sah profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ashaya Sah</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Ashaya_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Ashaya Sah</h1>
-          <p class="section__text__p2">Fullstack Developer</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('./assets/Ashaya_Resume.pdf')"
-            >
-              Download CV
-            </button>
-            <button 
-              class="btn btn-color-1" 
-              onclick="location.href='./#contact'"
-              >
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              target="_blank"  
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://www.linkedin.com/in/ashaya-sah/'"
-            />
-            <img
-              target="_blank"  
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='https://github.com/Ashaya01?tab=repositories'"
-            />
-          </div>
+        <div id="socials-container">
+          <img
+            target="_blank"
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ashaya-sah/'"
+          />
+          <img
+            target="_blank"
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ashaya01?tab=repositories'"
+          />
         </div>
+      </div>
     </section>
+
     <section id="about" class="hidden">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -88,14 +92,17 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container" onclick="location.href='./#experience'">
+            <div
+              class="details-container"
+              onclick="location.href='./#experience'"
+            >
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>Fresher<br />Fullstack Development</p>
+              <p>Fresher<br />Frontend Development</p>
             </div>
             <div class="details-container">
               <img
@@ -110,14 +117,15 @@
           <div class="text-container">
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Greetings! I am <span>Ashaya Sah</span>, an IT student aspiring to excel as a full-stack
-              developer. Proficient in both front-end and back-end development, I am dedicated
-              to creating polished web applications. Fueled by a passion for problem-solving
-              and a commitment to staying abreast of industry trends, I strive to architect
-              robust and scalable solutions. Eager to contribute my skills to the field,
-              I am poised to make a meaningful impact in the dynamic realm of full-stack
-              development. Let's connect and explore the possibilities of coding 
-              excellence! 
+              Greetings! I am <span>Ashaya Sah</span>, an IT student aspiring to
+              excel as a full-stack developer. Currently, proficient in
+              front-end development, I am dedicated to creating polished web
+              applications. Fueled by a passion for problem-solving and a
+              commitment to staying abreast of industry trends, I strive to
+              architect robust and scalable solutions. Eager to contribute my
+              skills to the field, I am poised to make a meaningful impact in
+              the dynamic realm of full-stack development. Let's connect and
+              explore the possibilities of coding excellence!
             </p>
           </div>
         </div>
@@ -129,6 +137,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
     <section id="experience" class="hidden">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -167,6 +176,17 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -203,10 +223,10 @@
         <div class="text-container">
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            This just wraps up my first project as a full-stack developer. Fingers
-             crossed that everyone enjoys 
-            what I've put together. It's been a journey of learning and coding, and 
-            I'm hopeful it brings value.
+            This just wraps up my first project as a full-stack developer.
+            Fingers crossed that everyone enjoys what I've put together. It's
+            been a journey of learning and coding, and I'm hopeful it brings
+            value.
           </p>
         </div>
       </div>
@@ -217,7 +237,8 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <!-- <section id="projects">
+
+    <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -225,70 +246,88 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/youtube_clone_1.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Youtube Clone</h2>
+            <p class="project-details">
+              Front-end: React, JavaScript, HTML, CSS, Responsive UI, YouTube
+              Data API
+            </p>
             <div class="btn-container">
               <button
+                target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AshayaSah/React_Youtube_Clone.git'"
               >
                 Github
               </button>
               <button
+                target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://ashaya-youtube-clone.netlify.app/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
-                alt="Project 2"
+                src="./assets/weather_website.png"
+                alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Weather Website</h2>
+            <p class="project-details">
+              Front-end: React, JavaScript, HTML, CSS, Responsive UI, Weather API
+            </p>
             <div class="btn-container">
               <button
+                target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AshayaSah/Weather-Website'"
               >
                 Github
               </button>
               <button
+                target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://ashayasah.github.io/Weather-Website/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 3"
+                src="./assets/gradient_generator_1.png"
+                alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">CSS Gradient Generator</h2>
+            <p class="project-details">
+              Front-end: JavaScript, HTML, CSS, Responsive UI
+            </p>
             <div class="btn-container">
               <button
+                target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AshayaSah/Random-CSS-Gradient-Generator'"
               >
                 Github
               </button>
               <button
+                target="_blank"
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://ashayasah.github.io/Random-CSS-Gradient-Generator/'"
               >
                 Live Demo
               </button>
@@ -302,7 +341,8 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
-    </section> -->
+    </section>
+
     <section id="contact" class="hidden">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -313,7 +353,13 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:ashaysah@gmail.com?subject=Mail to Mr.Ashaya Sah" target="_blank">E-mail</a></p>
+          <p>
+            <a
+              href="mailto:ashaysah@gmail.com?subject=Mail to Mr.Ashaya Sah"
+              target="_blank"
+              >E-mail</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -321,7 +367,11 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/ashaya-sah/" target="_blank">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/ashaya-sah/" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -333,6 +383,7 @@
         </div>
       </div>
     </section>
+
     <footer class="hidden">
       <nav>
         <div class="nav-links-container">
@@ -347,7 +398,8 @@
       </nav>
       <p>Copyright &#169; 2024 Ashaya Sah. All Rights Reserved.</p>
     </footer>
+
     <script src="js/script.js"></script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
-</body>
+  </body>
 </html>

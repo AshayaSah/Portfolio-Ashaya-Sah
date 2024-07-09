@@ -398,13 +398,17 @@ article {
   gap: 0.5rem;
 }
 
+article p{
+  width: 110px;
+}
+
 article .icon {
   cursor: default;
 }
 
 /* PROJECTS SECTION */
 
-/* #projects {
+#projects {
   position: relative;
 }
 
@@ -414,9 +418,11 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 90%;
-  height: 90%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .project-title {
@@ -424,10 +430,15 @@ article .icon {
   color: black;
 }
 
+.project-details{
+  margin-bottom: 20px;
+}
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
-} */
+  color:rgb(163, 163, 163);
+}
 
 /* CONTACT */
 

@@ -45,6 +45,7 @@ function toggleMenu() {
   icon.classList.toggle("open", isOpen);
 }
 
+//function to open and close the hamburger menu
 function closeMenuOutsideClick(event) {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");

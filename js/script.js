@@ -99,7 +99,7 @@ document.body.addEventListener("mousedown", closeMenuOutsideClick);
  //For Varcel Insight
  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
 
- //SpideWeb Effect
+ //JS for the s[iderweb effect after you uncomment the canvas tag from the profile section and css as well
 // let banner = document.getElementById('profile');
 // let canvas = document.getElementById('dotsCanvas');
 // canvas.width = canvas.offsetWidth;
